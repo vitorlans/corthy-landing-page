@@ -1,124 +1,14 @@
 import React, { Component } from 'react';
+import Features from './components/features';
+import Header from './components/header';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <section className="header">
-          <div className="container container-lg header__container">
-            <div className="header__content">
-              <h1 className="header__title">Craze</h1>
-              <h3 className="header__description">
-                A great new free psd theme to showcase your new app.
-              </h3>
-              <div className="header__downloads">
-                <a className="header__download">
-                  <img src="images/header/icon-ios.png" />
-                </a>
-                <a className="header__download">
-                  <img src="images/header/icon-android.png" />
-                </a>
-                <a className="header__download">
-                  <img src="images/header/icon-windows.png" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="section features">
-          <div className="container container-lg">
-            <h2 className="title title--center">Craze features</h2>
-            <p className="features__description description description--center">
-              Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure
-              accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui
-              cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr.
-            </p>
-          </div>
-          <div className="container container-xl features__grid">
-            <div className="features__column">
-              <img
-                className="features__column-icon"
-                src="images/features/icon-flat-design.png"
-                alt="Flat design"
-                title="Flat design"
-              />
-              <h3 className="title title--center title--small">Flat design</h3>
-              <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse fringilla.
-              </p>
-            </div>
-            <div className="features__column">
-              <img
-                className="features__column-icon"
-                src="images/features/icon-marketable.png"
-                alt="Flat design"
-                title="Flat design"
-              />
-              <h3 className="title title--center title--small">Marketable</h3>
-              <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse fringilla.
-              </p>
-            </div>
-            <div className="features__column">
-              <img
-                className="features__column-icon"
-                src="images/features/icon-edit-photos.png"
-                alt="Flat design"
-                title="Flat design"
-              />
-              <h3 className="title title--center title--small">Edit Photos</h3>
-              <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse fringilla.
-              </p>
-            </div>
-            <div className="features__column">
-              <img
-                className="features__column-icon"
-                src="images/features/icon-edit-colors.png"
-                alt="Flat design"
-                title="Flat design"
-              />
-              <h3 className="title title--center title--small">Edit Colors</h3>
-              <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse fringilla.
-              </p>
-            </div>
-            <div className="features__column">
-              <img
-                className="features__column-icon"
-                src="images/features/icon-user-friendly.png"
-                alt="Flat design"
-                title="Flat design"
-              />
-              <h3 className="title title--center title--small">
-                User Friendly
-              </h3>
-              <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse fringilla.
-              </p>
-            </div>
-            <div className="features__column">
-              <img
-                className="features__column-icon"
-                src="images/features/icon-editable.png"
-                alt="Flat design"
-                title="Flat design"
-              />
-              <h3 className="title title--center title--small">
-                100% Editable
-              </h3>
-              <p className="description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse fringilla.
-              </p>
-            </div>
-          </div>
-        </section>
+        <Header />
+        <Features />
         <section className="section about">
           <div className="container container-xl about__grid">
             <div className="about__column">
@@ -176,7 +66,6 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="testimonials__navigation" js-slider-bullets />
         </section>
         <section className="section pricing">
           <div className="container container-lg">
