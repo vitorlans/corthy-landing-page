@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Phone} from 'react-landing-page'
 
 class Header extends Component {
   render() {
