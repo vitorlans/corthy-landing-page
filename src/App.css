@@ -375,9 +375,6 @@ html {
   .about__column {
     width: 50%;
   }
-  .about__video {
-    min-height: 18vw;
-  }
 }
 .contact__social {
   padding: 1em 0;
@@ -524,17 +521,16 @@ html {
 }
 .header {
   /* background-image: url(img/6ddeea5e7b47d702047b3834210e8644.jpg); */
-  background-color: #008a8a;
+  background-color: #f5f5f5;
   color: #fff;
 }
 .header__container {
-  /* background-image: url(img/c810d093c4d5e2423d523b70279eb8e9.png); */
-  background-color: #008a8a;
+  background-image: url(components/header/hand-placeholder.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: 80%;
   min-height: 25em;
-  padding-bottom: 95%;
+  padding-bottom: 120%;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -550,19 +546,18 @@ html {
   font-size: 5em;
   margin: 0;
 }
-.header__description,
-.header__title {
-  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
-}
+
 .header__description {
   font-family: Open Sans, sans-serif;
   font-size: 1.4em;
   line-height: 1.5em;
   margin: 1.5em 0 1em;
+  padding-left: 1%;
 }
 .header__downloads {
   display: -webkit-flex;
   display: flex;
+  padding-left: 1%;
 }
 .header__download {
   width: 200px;
@@ -572,7 +567,7 @@ html {
 }
 @media screen and (min-width: 48em) {
   .header__container {
-    min-height: 38em;
+    min-height: 43em;
     padding-bottom: 0;
     background-position: 100% 100%;
     background-size: inherit;
@@ -586,6 +581,9 @@ html {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+  }
+  .header__logo {
+    width: 310px !important;
   }
 }
 @media screen and (min-width: 64em) {
@@ -781,4 +779,31 @@ html {
 .description__list li {
   /* list-style-image: url(img/2325779d8697c427a7f3138da58bce28.png); */
   padding: 0.3em 0;
+}
+.header__logo {
+  width: 250px;
+}
+.whatsapp-chat {
+  position: fixed;
+  z-index: 999;
+  bottom: 10px;
+  right: 10px;
+}
+.whatsapp-chat img {
+  height: 35px;
+  width: auto;
+}
+.pulse {
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
 }

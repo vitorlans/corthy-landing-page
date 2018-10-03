@@ -8,234 +8,67 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <Features />
         <section className="section about">
           <div className="container container-xl about__grid">
             <div className="about__column">
-              <h2 className="title">Whats Craze all About?</h2>
+              <h2 className="title">Conheça nossa ferramenta</h2>
               <div className="description">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse fringilla fringilla nisl congue congue. Maecenas
-                  nec condimentum libero, at elementum mauris.
+                  Corthy é o aplicativo perfeito para gerenciamento do seu salão
+                  de beleza, barbearia, estúdio de tatuagem e clínica estética.
                 </p>
                 <br />
-                Phasellus eget nisi dapibus, ultricies nisl at, hendrerit
-                risusuis ornare luctus id sollicitudin ante lobortis at.
-                <ul className="description__list">
-                  <li>Lorem ipsum dolor sit amet</li>
-                  <li>Lorem ipsum dolor sit amet consectetur elt</li>
-                </ul>
+                <p>
+                  Tenha em mãos uma ferramenta incrível que vai organizar o seu
+                  negócio, fornecendo inteligência para melhorar a comunicação
+                  com o seu cliente aumentando o lucro da empresa.
+                </p>
+                <br />
+                <p>
+                  Veja nosso vídeo explicativo e entenda um pouco do que podemos
+                  fazer por você.
+                </p>
               </div>
             </div>
             <div className="about__column">
               <iframe
-                className="about__video"
-                src="https://player.vimeo.com/video/20385982?title=0&byline=0&portrait=0"
+                className="embed-responsive embed-responsive-16by9"
+                src="https://www.youtube.com/embed/J1mnZchxJQ4"
                 width="100%"
                 height="100%"
                 frameborder="0"
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowfullscreen
+                allowFullScreen
               />
             </div>
           </div>
         </section>
-        <section className="section testimonials" js-slider>
-          <div className="testimonials__holder" js-slider-holder>
-            <div className="testimonials__item" js-slider-item>
-              <div className="container container-md">
-                “Craze is one of the most complete app packages I have ever come
-                across. I would highly reccomend it to anyone!”
-                <span className="testimonials__author">Sarah Hunt</span>
-              </div>
-            </div>
-            <div className="testimonials__item" js-slider-item>
-              <div className="container container-md">
-                “Craze is one of the most complete app packages I have ever come
-                across. I would highly reccomend it to anyone!”
-                <span className="testimonials__author">Sarah Hunt</span>
-              </div>
-            </div>
-            <div className="testimonials__item" js-slider-item>
-              <div className="container container-md">
-                “Craze is one of the most complete app packages I have ever come
-                across. I would highly reccomend it to anyone!”
-                <span className="testimonials__author">Sarah Hunt</span>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="section pricing">
-          <div className="container container-lg">
-            <h2 className="title title--center">Pricing Plans</h2>
-            <p className="features__description description description--center">
-              Lorem ipsum dolor sit amet, pro aeterno adipisci ex, pro no iriure
-              accusam. Eros admodum intellegat ex mea, mei wisi nullam ne, qui
-              cu aliquid nominavi. Est habemus maiestatis ut. Vim quod elitr.
-            </p>
-          </div>
-          <div className="container container-xl">
-            <div className="pricing__grid">
-              <div className="pricing__column">
-                <div className="pricing__table-line pricing__table-line--blue">
-                  Basic
-                </div>
-                <div className="pricing__table-line pricing__table-line--white pricing__value">
-                  $ 19
-                  <span className="pricing__cents">99</span>
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 1
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 2
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 3
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 4
-                </div>
-                <div className="pricing__table-line pricing__table-line--white pricing__table-line--no-line">
-                  Feature 5
-                </div>
-                <div className="pricing__table-line pricing__table-line--blue">
-                  <a className="pricing__table-buttom">PURCHASE</a>
-                </div>
-              </div>
-              <div className="pricing__column">
-                <div className="pricing__table-line pricing__table-line--blue">
-                  Standard
-                </div>
-                <div className="pricing__table-line pricing__table-line--white pricing__value">
-                  $ 39
-                  <span className="pricing__cents">99</span>
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 1
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 2
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 3
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 4
-                </div>
-                <div className="pricing__table-line pricing__table-line--white pricing__table-line--no-line">
-                  Feature 5
-                </div>
-                <div className="pricing__table-line pricing__table-line--blue">
-                  <a className="pricing__table-buttom">PURCHASE</a>
-                </div>
-              </div>
-              <div className="pricing__column">
-                <div className="pricing__table-line pricing__table-line--blue">
-                  Deluxe
-                </div>
-                <div className="pricing__table-line pricing__table-line--white pricing__value">
-                  $ 59
-                  <span className="pricing__cents">99</span>
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 1
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 2
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 3
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 4
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 5
-                </div>
-                <div className="pricing__table-line pricing__table-line--white pricing__table-line--no-line">
-                  Feature 6
-                </div>
-                <div className="pricing__table-line pricing__table-line--blue">
-                  <a className="pricing__table-buttom">PURCHASE</a>
-                </div>
-              </div>
-              <div className="pricing__column">
-                <div className="pricing__table-line pricing__table-line--blue">
-                  Unlimited
-                </div>
-                <div className="pricing__table-line pricing__table-line--white pricing__value">
-                  $ 79
-                  <span className="pricing__cents">99</span>
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 1
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 2
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 3
-                </div>
-                <div className="pricing__table-line pricing__table-line--white">
-                  Feature 4
-                </div>
-                <div className="pricing__table-line pricing__table-line--white pricing__table-line--no-line">
-                  Feature 5
-                </div>
-                <div className="pricing__table-line pricing__table-line--blue">
-                  <a className="pricing__table-buttom">PURCHASE</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <Features />
+
         <section className="section contact">
           <div className="container container-lg">
-            <h2 className="title title--center">Say Hi & Get in Touch</h2>
+            <h2 className="title title--center">
+              Fique ligado em nossas redes sociais.
+            </h2>
             <p className="description description--center">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              suspendisse.
+              Participe de nossos meios de comunicação.
             </p>
             <div className="contact__social">
-              <a className="contact__social-icon">
-                <img
-                  src="images/contact/icon-twitter.png"
-                  alt="@twitter"
-                  title="@twitter"
-                />
-              </a>
-              <a className="contact__social-icon">
+              <a
+                href="https://www.facebook.com/corthydicas"
+                target="_blank"
+                className="contact__social-icon"
+              >
                 <img
                   src="images/contact/icon-facebook.png"
                   alt="Facebok"
                   title="Facebook"
                 />
               </a>
-              <a className="contact__social-icon">
-                <img
-                  src="images/contact/icon-pinterest.png"
-                  alt="Pinterest"
-                  title="Pinterest"
-                />
-              </a>
-              <a className="contact__social-icon">
-                <img
-                  src="images/contact/icon-google-plus.png"
-                  alt="G+"
-                  title="G+"
-                />
-              </a>
-              <a className="contact__social-icon">
-                <img
-                  src="images/contact/icon-linkedin.png"
-                  alt="Linkedin"
-                  title="Linkedin"
-                />
-              </a>
-              <a className="contact__social-icon">
+              <a
+                href="https://www.youtube.com/channel/UCGNfkCXEIM8mSRM2hvr6rMg"
+                target="_blank"
+                className="contact__social-icon"
+              >
                 <img
                   src="images/contact/icon-youtube.png"
                   alt="Youtube"
@@ -247,14 +80,32 @@ class App extends Component {
         </section>
         <section className="footer">
           <div className="footer__links">
-            <a className="footer__link">Contact</a>
-            <a className="footer__link">Download</a>
-            <a className="footer__link">Press</a>
-            <a className="footer__link">Email</a>
-            <a className="footer__link">Support</a>
-            <a className="footer__link">Privacy Policy</a>
+            <a
+              className="header__download"
+              href="https://play.google.com/store/apps/details?id=com.corthy.management"
+            >
+              <img
+                className="header__download_image"
+                alt="Disponível no Google Play"
+                src="https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png"
+              />
+            </a>
           </div>
         </section>
+        <div>
+          <a
+            className="whatsapp-chat"
+            href="https://api.whatsapp.com/send?phone=5516982511992&amp;text=Olá, estou acessando o site do Corthy e preciso de ajuda."
+            target="_blank"
+          >
+            <img
+              className="pulse"
+              title="Contato via Whatsapp"
+              src="images/contact/whatsapp-support.png"
+              style={{ borderRadius: 5 }}
+            />
+          </a>
+        </div>
       </div>
     );
   }
