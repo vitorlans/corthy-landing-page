@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Phone } from 'react-landing-page';
 
 class Header extends Component {
   render() {
@@ -7,9 +6,11 @@ class Header extends Component {
       <section className="header">
         <div className="container container-lg header__container">
           <div className="header__content">
-            <a>
-              <img className="header__logo" src="images/header/logo.png" />
-            </a>
+            {/* <div  className="header__logo">
+              <a>
+                <img className="header__logo_image" src="images/header/logo.png" />
+              </a>
+            </div> */}
             <h3 className="header__description" style={{ color: 'black' }}>
               Gestão completa de Salão e Barbearia
             </h3>

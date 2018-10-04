@@ -520,8 +520,7 @@ html {
   }
 }
 .header {
-  /* background-image: url(img/6ddeea5e7b47d702047b3834210e8644.jpg); */
-  background-color: #f5f5f5;
+  background-image: url(components/header/pattern-background-1.jpg);
   color: #fff;
 }
 .header__container {
@@ -536,6 +535,7 @@ html {
   -webkit-align-items: center;
   align-items: center;
   position: relative;
+  justify-content: center;
 }
 .header__content {
   max-width: 100%;
@@ -549,15 +549,18 @@ html {
 
 .header__description {
   font-family: Open Sans, sans-serif;
-  font-size: 1.4em;
+  font-size: 3.0em;
+  font-weight: bold;
   line-height: 1.5em;
   margin: 1.5em 0 1em;
   padding-left: 1%;
+  text-align: center;
 }
 .header__downloads {
   display: -webkit-flex;
   display: flex;
   padding-left: 1%;
+  justify-content: center;
 }
 .header__download {
   width: 200px;
@@ -571,6 +574,7 @@ html {
     padding-bottom: 0;
     background-position: 100% 100%;
     background-size: inherit;
+    justify-content: inherit;
   }
   .header__content {
     max-width: 45%;
@@ -582,9 +586,10 @@ html {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  .header__logo {
+  .header__logo_image {
     width: 310px !important;
   }
+
 }
 @media screen and (min-width: 64em) {
   .header__content {
@@ -780,7 +785,12 @@ html {
   /* list-style-image: url(img/2325779d8697c427a7f3138da58bce28.png); */
   padding: 0.3em 0;
 }
-.header__logo {
+
+.header__logo{
+  display: flex;
+  justify-content: center
+}
+.header__logo_image {
   width: 250px;
 }
 .whatsapp-chat {
@@ -804,6 +814,7 @@ html {
   position: relative;
   display: block;
   width: 100%;
+  height: 100%;
   padding: 0;
   overflow: hidden;
 }

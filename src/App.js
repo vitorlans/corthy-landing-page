@@ -31,14 +31,7 @@ class App extends Component {
               </div>
             </div>
             <div className="about__column">
-              <iframe
-                className="embed-responsive embed-responsive-16by9"
-                src="https://www.youtube.com/embed/J1mnZchxJQ4"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                allowFullScreen
-              />
+            <iframe className="embed-responsive embed-responsive-16by9" src="https://www.youtube.com/embed/J1mnZchxJQ4" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
             </div>
           </div>
         </section>
