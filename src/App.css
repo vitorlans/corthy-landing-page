@@ -526,7 +526,8 @@ html {
 .header__container {
   background-image: url(components/header/hand-placeholder.png);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position-y: bottom;
+  background-position-x: right;
   background-size: 80%;
   min-height: 25em;
   padding-bottom: 120%;
@@ -549,12 +550,12 @@ html {
 
 .header__description {
   font-family: Open Sans, sans-serif;
-  font-size: 3.0em;
+  font-size: 3em;
   font-weight: bold;
   line-height: 1.5em;
-  margin: 1.5em 0 1em;
-  padding-left: 1%;
   text-align: center;
+  margin-top: 17px;
+  margin-bottom: 1em;
 }
 .header__downloads {
   display: -webkit-flex;
@@ -589,7 +590,6 @@ html {
   .header__logo_image {
     width: 310px !important;
   }
-
 }
 @media screen and (min-width: 64em) {
   .header__content {
@@ -786,9 +786,9 @@ html {
   padding: 0.3em 0;
 }
 
-.header__logo{
+.header__logo {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 .header__logo_image {
   width: 250px;
