@@ -517,11 +517,9 @@ html {
   }
 }
 .header {
-  background-image: url(components/header/pattern-background-1.jpg);
   color: #fff;
 }
 .header__container {
-  background-image: url(components/header/hand-placeholder.png);
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: right;

@@ -3,8 +3,18 @@ import React, { Component } from 'react';
 class Header extends Component {
   render() {
     return (
-      <section className="header">
-        <div className="container container-lg header__container">
+      <section
+        className="header"
+        style={{
+          backgroundImage: "url('images/header/pattern-background.jpg')"
+        }}
+      >
+        <div
+          className="container container-lg header__container"
+          style={{
+            backgroundImage: "url('images/header/hand-placeholder.png')"
+          }}
+        >
           <div className="header__content">
             <h3 className="header__description" style={{ color: 'black' }}>
               Gestão completa de Salão e Barbearia
